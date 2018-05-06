@@ -1,0 +1,32 @@
+{
+    "name": "irusel/newpost_filter",
+    "type": "phpbb-extension",
+    "description": "Фильтр новых сообщений",
+    "homepage": "",
+    "version": "1.0.0",
+    "time": "2018-05-06",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "iRusel",
+            "email": "irusel@yandex.ru",
+            "homepage": "",
+            "role": ""
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "iNewpost Filter",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.1.4,<3.2.0@dev"
+        }
+    },
+    "version-check": {
+        "host": "irusel.github.io",
+        "directory": "/platforms/phpBB/versions",
+        "filename": "newpost_filter.json"
+    }
+}

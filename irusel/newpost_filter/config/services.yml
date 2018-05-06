@@ -1,0 +1,13 @@
+services:
+    irusel.newpost_filter.listener:
+        class: irusel\newpost_filter\event\main_listener
+        arguments:              
+            - '@dbal.conn'         
+            - '@auth'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '%core.php_ext%'
+
+        tags:
+            - { name: event.listener }
